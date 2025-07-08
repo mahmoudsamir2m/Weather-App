@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="icon" href="./photos/1163661.png" type="image/png">
+</head>
+<body class="light-mode">
+  <main class="hero-container">
+    <header>
+      <h1><img src="./photos/imgi_1_logo@2x (1).png" alt="">Weather Forecast</h1>
+      <button id="toggleMode"><img src="./photos/imgi_2_113.png" alt="moon icon"></button>
+    </header>
+
+    <section>
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button id="Search">Search</button>
+      </div>
+      <p id="errorMassage" class="errorMassage"></p>
+    </section>
+
+    <section id="weatherResults" class="card-grid"></section>
+  </main>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
