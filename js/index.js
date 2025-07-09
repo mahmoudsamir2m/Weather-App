@@ -10,13 +10,12 @@ function searchCity() {
     getWeather(city);
   }
   console.log(city.length);
-  
 }
 cityInput.addEventListener("keyup", searchCity);
 document.getElementById("Search").addEventListener("click", searchCity);
 function getWeather(city = "") {
   if (!city) return;
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${encodeURIComponent(
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${encodeURIComponent(
     city
   )}&days=3`;
 
@@ -35,7 +34,7 @@ function getWeather(city = "") {
       setTimeout(() => {
         errorMassage.innerHTML = "";
         errorMassage.classList.remove("Massage");
-      }, 2000);
+      }, 2500);
     });
 }
 
